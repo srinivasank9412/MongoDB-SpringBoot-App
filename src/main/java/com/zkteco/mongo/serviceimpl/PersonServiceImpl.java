@@ -13,6 +13,7 @@ import com.zkteco.mongo.service.PersonService;
 	@Autowired
 	private PersonRepository repo;
 	
+	//saving new person
 	@Override
 	public String save(Person person) {
 		return repo.save(person).getId();
